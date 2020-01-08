@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.deloitte.firstmvn</groupId>
-  <artifactId>hibfirst</artifactId>
+  <artifactId>hibthird</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>hibfirst</name>
+  <name>hibthird</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -22,9 +22,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-       <groupId>org.hibernate</groupId>
-       <artifactId>hibernate-core</artifactId>
-       <version>5.0.0.Final</version>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.0.0.Final</version>
     </dependency>
   </dependencies>
 </project>

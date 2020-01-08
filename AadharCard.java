@@ -1,0 +1,53 @@
+package com.deloitte.firstmvn.hibthird.entity;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+import java.sql.Date;
+import javax.persistence.Column;
+@Entity
+public class AadharCard 
+{
+   @Id
+   int id;
+   @Column(name="issue_auth")
+   String issueAuth;
+   @Column(name="issue_date")
+    Date issueDate;
+   @OneToOne(mappedBy="acard")
+   Person person;
+   public AadharCard() {}
+   public AadharCard(int id, String issueAuth, Date issueDate)
+   {
+	this.id = id;
+	this.issueAuth = issueAuth;
+	this.issueDate = issueDate;
+   }
+   public int getId() {
+	return id;
+   }
+   public void setId(int id) {
+	this.id = id;
+   }
+   public String getIssueAuth() {
+	return issueAuth;
+   }
+   public void setIssueAuth(String issueAuth) {
+	this.issueAuth = issueAuth;
+   }
+   public java.sql.Date getIssueDate() {
+	return issueDate;
+   }
+   public void setIssueDate(java.sql.Date issueDate) {
+	this.issueDate = issueDate;
+   }
+   public Person getPerson() {
+	return person;
+   }
+   public void setPerson(Person person) {
+	this.person = person;
+   }
+   
+   
+   
+}
